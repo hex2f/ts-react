@@ -1,0 +1,25 @@
+nav {
+  @apply
+    flex
+    flex-row
+    p-4
+    gap-4
+}
+
+nav * {
+  @apply
+    hover:underline
+}
+
+button {
+  @apply 
+    px-4
+    py-2
+    text-sm
+    rounded-md
+    bg-brand
+    text-white
+    hover:bg-brand-dark
+    active:translate-y-px
+    transition-all
+}

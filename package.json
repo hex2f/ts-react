@@ -1,0 +1,62 @@
+{
+  "name": "leah-ts",
+  "version": "1.0.1",
+  "description": "Leah's TypeScript boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "bundle": "NODE_ENV=production webpack --config webpack.config.js",
+    "fix": "eslint src/**/*.ts --fix",
+    "build": "npm run lint && npm run bundle",
+    "dev": "webpack serve --config webpack.config.js"
+  },
+  "_moduleAliases": {
+    "~": "./out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leahlundqvist/ts.git"
+  },
+  "author": "Leah Lundqvist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leahlundqvist/ts/issues"
+  },
+  "homepage": "https://github.com/leahlundqvist/ts#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.40",
+    "@types/node-fetch": "^2.5.10",
+    "@types/react": "^17.0.12",
+    "@types/react-dom": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "autoprefixer": "^10.2.6",
+    "css-loader": "^5.2.6",
+    "esbuild-loader": "^2.13.1",
+    "eslint": "^7.24.0",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "postcss": "^8.3.5",
+    "postcss-csso": "^5.0.1",
+    "postcss-fixes": "^2.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.1.1",
+    "style-loader": "^3.0.0",
+    "tailwindcss": "^2.2.4",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.2.4",
+    "webpack": "^5.42.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@types/react-router-dom": "^5.1.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
+  }
+}
